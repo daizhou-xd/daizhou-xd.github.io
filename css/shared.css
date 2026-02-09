@@ -32,21 +32,25 @@ body {
     padding: 0;
     font-family: sans-serif;
     font-size: 16px;
-    background-color: rgb(255, 255, 255);
+    background-color: #f6f6f6;
+    background-image:
+        linear-gradient(120deg, rgba(255, 145, 56, 0.06), rgba(80, 80, 80, 0.04)),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'><rect width='220' height='220' fill='none'/><circle cx='40' cy='40' r='3' fill='rgba(80,80,80,0.22)'/><circle cx='160' cy='70' r='4' fill='rgba(255,145,56,0.22)'/><circle cx='120' cy='170' r='3' fill='rgba(80,80,80,0.18)'/><circle cx='200' cy='200' r='2' fill='rgba(255,145,56,0.18)'/></svg>");
+    background-attachment: fixed;
 }
 
 .bg_blue {
     padding: 4px;
     padding-left: 8px;
     border-radius: 4px;
-    background-color: rgb(200, 200, 255);
+    background-color: #efefef;
 }
 
 .bg_red {
     padding: 4px;
     padding-left: 8px;
     border-radius: 2px;
-    background-color: rgb(255, 200, 200);
+    background-color: #ffe3cf;
 }
 
 .chinese {
@@ -60,26 +64,27 @@ body {
 }
 
 hr {
-    border-color: rgb(146, 146, 146);
-    color: rgb(146, 146, 146);
+    border-color: #b6b6b6;
+    color: #b6b6b6;
 }
 
 .container {
     width: 750px;
     margin: 20px auto;
-    border: 2px solid rgb(146, 146, 146);
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.94);
     padding: 20px;
     clear: both;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 .container_no_border {
     width: 750px;
     margin: 20px auto;
     border: none;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.94);
     padding: 20px;
     clear: both;
 }
@@ -88,10 +93,11 @@ hr {
     width: 750px;
     margin: 20px auto;
     border: none;
-    border-radius: 10px;
-    background-color: rgb(120, 120, 255);
+    border-radius: 12px;
+    background-color: #ff9f43;
     padding: 20px;
     clear: both;
+    box-shadow: 0 6px 18px rgba(255, 159, 67, 0.25);
 }
 
 .container_title {
@@ -135,7 +141,7 @@ a:hover {
 
 a,
 a:visited {
-    color: #0050e7;
+    color: #c4631a;
 }
 
 .publication {
@@ -171,7 +177,7 @@ a:visited {
 }
 
 .publication .pub_desc .pub_title a {
-    color: #0000A0;
+    color: #c4631a;
 }
 
 .publication .pub_desc .pub_author {
@@ -180,7 +186,7 @@ a:visited {
 }
 
 .publication .pub_desc .pub_author a {
-    color: #0000A0;
+    color: #c4631a;
 }
 
 .publication .pub_desc .pub_links {
@@ -189,7 +195,7 @@ a:visited {
 
 .publication .pub_desc .pub_links a {
     margin-right: 0px;
-    color: #0000A0;
+    color: #c4631a;
 }
 
 .codelogo {
