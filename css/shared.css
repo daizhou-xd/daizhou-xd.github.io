@@ -35,7 +35,7 @@ body {
     background-color: #f6f6f6;
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-        url("/img/background.jpg");
+        url("../img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -261,4 +261,27 @@ a:visited {
 .image_line .img {
     display: inline-block;
     vertical-align: top;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.social-links img {
+    height: 28px;
+    transition: all 0.3s ease;
 }
