@@ -34,7 +34,7 @@ body {
     font-size: 16px;
     background-color: #f6f6f6;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7)),
         url("../img/background.jpg");
     background-attachment: fixed;
     background-size: cover;
