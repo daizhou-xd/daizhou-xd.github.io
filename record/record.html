@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="/css/shared.css" type="text/css">
     <link rel="stylesheet" href="/css/navbar.css" type="text/css">
 
+    <style>
+        .record-card-link:hover .record-card {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        @media screen and (max-width: 768px) {
+            .record-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -33,68 +46,66 @@
     </div>
 
     <div class="container">
-        <div class="research_card_line">
-            <!-- XDU课程记录 -->
-            <a href="https://bcnqet6bl2ik.feishu.cn/wiki/Ou2iwhxdxiN7NpkyccEcIc2knKo?fromScene=spaceOverview" target="_blank" style="text-decoration: none;">
-                <div class="research">
-                    <img src="/img/xdu_courses.jpg" width="280px" style="border-radius: 5px; margin-top: 10px;" 
-                         onerror="this.src='https://bcnqet6bl2ik.feishu.cn/wiki/Ou2iwhxdxiN7NpkyccEcIc2knKo?fromScene=spaceOverview'">
-                    <h3 style="margin-top: 15px; color: #333;">🎓 XDU课程记录</h3>
-                    <p style="color: #666; padding: 0 10px;">
-                        机器人工程专业核心课程学习笔记与总结
-                    </p>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="research_card_line">
-            <!-- 深度学习 -->
-            <a href="https://bcnqet6bl2ik.feishu.cn/wiki/QjKRwrkqFi7yodksOxccVfVNnRc?fromScene=spaceOverview" target="_blank" style="text-decoration: none;">
-                <div class="research">
-                    <img src="/img/deep_learning.jpg" width="280px" style="border-radius: 5px; margin-top: 10px;"
-                         onerror="this.src='https://bcnqet6bl2ik.feishu.cn/wiki/QjKRwrkqFi7yodksOxccVfVNnRc?fromScene=spaceOverview'">
-                    <h3 style="margin-top: 15px; color: #333;">🧠 深度学习</h3>
-                    <p style="color: #666; padding: 0 10px;">
-                        PyTorch框架学习与深度学习算法实践
-                    </p>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="research_card_line">
-            <!-- 强化学习 -->
-            <a href="https://bcnqet6bl2ik.feishu.cn/wiki/PUf9www9PiyL1GkruYscE9QdnUf?fromScene=spaceOverview" target="_blank" style="text-decoration: none;">
-                <div class="research">
-                    <img src="/img/reinforcement_learning.jpg" width="280px" style="border-radius: 5px; margin-top: 10px;"
-                         onerror="this.src='https://bcnqet6bl2ik.feishu.cn/wiki/PUf9www9PiyL1GkruYscE9QdnUf?fromScene=spaceOverview'">
-                    <h3 style="margin-top: 15px; color: #333;">🎯 强化学习</h3>
-                    <p style="color: #666; padding: 0 10px;">
-                        机器人强化学习与Sim-to-Real技术探索
-                    </p>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- <div class="container">
-        <div class="research_card_line">
+        <div class="record-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center;">
             
-            <a href="YOUR_FEISHU_LINK_ROS2" target="_blank" style="text-decoration: none;">
-                <div class="research">
-                    <img src="/img/ros2.jpg" width="280px" style="border-radius: 5px; margin-top: 10px;"
-                         onerror="this.src='https://via.placeholder.com/280x200/06BCC1/FFFFFF?text=ROS2'">
-                    <h3 style="margin-top: 15px; color: #333;">🤖 ROS2</h3>
-                    <p style="color: #666; padding: 0 10px;">
-                        ROS2机器人操作系统学习与应用开发
-                    </p>
+            <!-- XDU课程记录 -->
+            <a href="https://bcnqet6bl2ik.feishu.cn/wiki/Ou2iwhxdxiN7NpkyccEcIc2knKo?fromScene=spaceOverview" target="_blank" class="record-card-link" style="text-decoration: none;">
+                <div class="record-card" style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; width: 220px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+                    <img src="/img/xdu_courses.jpg" width="220px" height="140px" style="object-fit: cover; display: block;" 
+                         onerror="this.src='https://via.placeholder.com/220x140/FF9F43/FFFFFF?text=XDU+课程'">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; color: #333; font-size: 16px;">🎓 XDU课程记录</h3>
+                        <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">
+                            机器人工程专业核心课程学习笔记与总结
+                        </p>
+                    </div>
                 </div>
             </a>
+
+            <!-- 深度学习 -->
+            <a href="https://bcnqet6bl2ik.feishu.cn/wiki/QjKRwrkqFi7yodksOxccVfVNnRc?fromScene=spaceOverview" target="_blank" class="record-card-link" style="text-decoration: none;">
+                <div class="record-card" style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; width: 220px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+                    <img src="/img/deep_learning.jpg" width="220px" height="140px" style="object-fit: cover; display: block;"
+                         onerror="this.src='https://via.placeholder.com/220x140/00A8E8/FFFFFF?text=深度学习'">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; color: #333; font-size: 16px;">🧠 深度学习</h3>
+                        <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">
+                            PyTorch框架学习与深度学习算法实践
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 强化学习 -->
+            <a href="https://bcnqet6bl2ik.feishu.cn/wiki/PUf9www9PiyL1GkruYscE9QdnUf?fromScene=spaceOverview" target="_blank" class="record-card-link" style="text-decoration: none;">
+                <div class="record-card" style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; width: 220px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+                    <img src="/img/reinforcement_learning.jpg" width="220px" height="140px" style="object-fit: cover; display: block;"
+                         onerror="this.src='https://via.placeholder.com/220x140/7209B7/FFFFFF?text=强化学习'">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; color: #333; font-size: 16px;">🎯 强化学习</h3>
+                        <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">
+                            机器人强化学习与Sim-to-Real技术探索
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ROS2 - 可以去掉注释来显示 -->
+            <!-- <a href="YOUR_FEISHU_LINK_ROS2" target="_blank" style="text-decoration: none;">
+                <div style="border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; width: 220px; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="/img/ros2.jpg" width="220px" height="140px" style="object-fit: cover; display: block;"
+                         onerror="this.src='https://via.placeholder.com/220x140/06BCC1/FFFFFF?text=ROS2'">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 10px 0; color: #333; font-size: 16px;">🤖 ROS2</h3>
+                        <p style="color: #666; font-size: 14px; margin: 0; line-height: 1.5;">
+                            ROS2机器人操作系统学习与应用开发
+                        </p>
+                    </div>
+                </div>
+            </a> -->
+
         </div>
-    </div> -->
+    </div>
 
     <!-- <div class="container">
         <h2>🍊 其他学习资源</h2>
