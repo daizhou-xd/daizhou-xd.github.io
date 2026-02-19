@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Projects - 周岱</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- set page stylesheet -->
+    <link rel="stylesheet" href="/css/shared.css" type="text/css">
+    <link rel="stylesheet" href="/css/navbar.css" type="text/css">
+
+    <style>
+        .project-card {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            padding: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .project-card:hover {
+            background-color: rgba(255, 159, 67, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card .project-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            min-width: 200px;
+            border-radius: 8px;
+            margin-right: 25px;
+            overflow: hidden;
+        }
+
+        .project-card .project-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .project-card .project-desc {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .project-card .project-desc .project-title {
+            text-align: start;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #c4631a;
+        }
+
+        .project-card .project-desc .project-info {
+            text-align: start;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .project-card .project-desc .project-tags {
+            margin-top: 10px;
+        }
+
+        .project-card .project-desc .project-tags span {
+            display: inline-block;
+            padding: 3px 10px;
+            margin-right: 8px;
+            margin-top: 5px;
+            background-color: #ffe3cf;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #c4631a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container_bg navbar">
+        <img src="/img/西电logo.jpg" alt="XDU Logo" class="navbar-logo">
+        <h2>
+            <a href="/index.html">HOME</a>&nbsp;&nbsp;<span class="delimiter">&middot;</span>&nbsp;&nbsp;
+            <a href="/project/project.html">PROJECT</a>&nbsp;&nbsp;<span
+                class="delimiter">&middot;</span>&nbsp;
+            <a href="/record/record.html">RECORD</a>
+        </h2>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center;">🚀 My Projects</h1>
+        <p style="text-align: center; color: #666;">Here are some of my research and development projects</p>
+    </div>
+
+    <div class="container">
+        <!-- CVPR2026 项目 -->
+        <a href="https://github.com/daizhou-xd" target="_blank" style="text-decoration: none;">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/img/deep_learning.jpg" alt="CVPR2026 Project">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">CVPR2026 Research Project</div>
+                    <div class="project-info">
+                        计算机视觉与模式识别领域的前沿研究项目，专注于深度学习与视觉理解的创新应用。
+                        本项目探索了新型视觉算法在复杂场景下的性能表现，致力于推动计算机视觉技术的发展。
+                    </div>
+                    <div class="project-tags">
+                        <span>Computer Vision</span>
+                        <span>Deep Learning</span>
+                        <span>CVPR</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- NeurIPS2026 项目 -->
+        <a href="https://github.com/daizhou-xd" target="_blank" style="text-decoration: none;">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/img/reinforcement_learning.jpg" alt="NeurIPS2026 Project">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">NeurIPS2026 Research Project</div>
+                    <div class="project-info">
+                        神经信息处理系统大会相关研究，聚焦于强化学习算法在机器人控制中的应用。
+                        通过深度强化学习方法，实现了机器人在复杂环境下的自主决策与控制。
+                    </div>
+                    <div class="project-tags">
+                        <span>Reinforcement Learning</span>
+                        <span>Neural Networks</span>
+                        <span>NeurIPS</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- 灵心巧手-Xbotics实习 -->
+        <a href="https://github.com/daizhou-xd" target="_blank" style="text-decoration: none;">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/img/avatar.jpg" alt="Xbotics Internship">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">灵心巧手 - Xbotics 实习项目</div>
+                    <div class="project-info">
+                        在Xbotics实习期间参与灵巧手操作系统的研发工作，负责灵巧手控制算法的设计与实现。
+                        深入研究了机器人手部灵巧操作的关键技术，包括传感器融合、力控制以及精确抓取等核心功能。
+                    </div>
+                    <div class="project-tags">
+                        <span>Dexterous Hand</span>
+                        <span>Robotics</span>
+                        <span>Internship</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- 六足轮式变形机器人 -->
+        <a href="https://github.com/daizhou-xd" target="_blank" style="text-decoration: none;">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/img/xdu_courses.jpg" alt="Hexapod Wheeled Robot">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">六足轮式变形机器人</div>
+                    <div class="project-info">
+                        创新性的变形机器人设计项目，融合了六足行走与轮式移动的优势。
+                        机器人可根据不同地形自适应切换运动模式，实现了复杂环境下的高效移动。
+                        项目获得发明专利受理，展现了在机器人本体设计方面的创新能力。
+                    </div>
+                    <div class="project-tags">
+                        <span>Morphing Robot</span>
+                        <span>Mechanical Design</span>
+                        <span>Patent</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <!-- 索牵引灵巧手 -->
+        <a href="https://github.com/daizhou-xd" target="_blank" style="text-decoration: none;">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/img/deep_learning.jpg" alt="Tendon-Driven Dexterous Hand">
+                </div>
+                <div class="project-desc">
+                    <div class="project-title">索牵引仿生灵巧手</div>
+                    <div class="project-info">
+                        国家级大学生创新创业项目，担任项目负责人。
+                        采用索牵引机制设计仿生灵巧手，通过柔性索系统实现手指的精确控制与力传递。
+                        项目致力于开发低成本、高性能的灵巧手平台，为机器人灵巧操作研究提供硬件支持。
+                    </div>
+                    <div class="project-tags">
+                        <span>Dexterous Hand</span>
+                        <span>Tendon-Driven</span>
+                        <span>National Project</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="container" style="text-align: center;">
+        <p style="color: #666;">
+            💡 更多项目详情请访问我的 
+            <a href="https://github.com/daizhou-xd" target="_blank">GitHub</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
