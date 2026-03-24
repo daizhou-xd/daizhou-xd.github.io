@@ -1,9 +1,3 @@
-# README
+# 请直接访问
 
-## just develop html
-
-```bash
-cd blog
-nvm use 20
-npx hexo s -p $PORT
-```
+[daizhou-xd.github.io](https://daizhou-xd.github.io)
