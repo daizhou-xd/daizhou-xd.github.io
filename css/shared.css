@@ -285,3 +285,79 @@ a:visited {
     height: 28px;
     transition: all 0.3s ease;
 }
+
+.bio-card {
+    margin-top: 14px;
+    background: linear-gradient(135deg, rgba(255, 159, 67, 0.08), rgba(255, 255, 255, 0.6));
+    border: 1.5px solid rgba(255, 159, 67, 0.45);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 17px;
+    line-height: 2;
+    color: #333;
+}
+
+/* Tag grid for Research Directions */
+.tag-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.tag-grid .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    background-color: #fff4ec;
+    border: 1.5px solid rgba(255, 159, 67, 0.4);
+    border-radius: 20px;
+    font-size: 15px;
+    color: #c4631a;
+    font-weight: 500;
+}
+
+/* Styled list for Achievements / Skills */
+.styled-list {
+    margin-top: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+.styled-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.styled-list li:last-child {
+    border-bottom: none;
+}
+
+.styled-list li::before {
+    content: "▸";
+    color: #ff9f43;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.list-section {
+    margin-top: 18px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    padding: 14px 18px;
+}
+
+.list-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c4631a;
+    margin-bottom: 4px;
+}
