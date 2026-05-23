@@ -134,6 +134,9 @@ hr {
 
 .avatar-img {
     width: 190px;
+    aspect-ratio: 3 / 5;
+    object-fit: cover;
+    object-position: center;
     border-radius: 12px;
     flex-shrink: 0;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
